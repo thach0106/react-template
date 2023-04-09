@@ -23,7 +23,7 @@
       "@/components/*": ["./src/components/*"],
       "@/types/*": ["./src/shared/types/*"],
       "@/services/*": ["./src/services/*"],
-      "@/hooks/*": ["./src/shared/hooks/*"],
+      "@/hooks/*": ["./src/shared/hooks/*"]
     }
   },
   "include": ["src"],

@@ -1,10 +1,22 @@
-import Home from "@/pages/home.page";
-import NotFound from "@/pages/404.page";
-import Layout from "@/components/layout";
+import { DefaultLayout, Home, NotFound, ProductDetail, ItemList } from "./loadable";
 
 const PUBLIC_ROUTES = [
-  { path: "/", page: Home, layout: Layout },
-  { path: "*", page: NotFound, layout: Layout }
+  { path: "/", component: Home, layout: DefaultLayout },
+  {
+    path: "products/",
+    layout: DefaultLayout,
+    children: [
+      {
+        path: "",
+        component: ItemList
+      },
+      {
+        path: ":id",
+        component: ProductDetail
+      }
+    ]
+  },
+  { path: "*", component: NotFound, layout: DefaultLayout }
 ];
 
 export { PUBLIC_ROUTES };

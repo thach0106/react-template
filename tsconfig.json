@@ -19,9 +19,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/pages/*": ["./src/pages/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/types/*": ["./src/shared/types/*"],
+      "@/modules/*": ["./src/modules/*"],
+      "@/components/*": ["./src/common/components/*"],
+      "@/types/*": ["./src/common/types/*"],
+      "@/styles/*": ["src/common/styles/*"],
       "@/services/*": ["./src/services/*"],
       "@/hooks/*": ["./src/shared/hooks/*"]
     }

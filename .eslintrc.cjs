@@ -45,7 +45,6 @@ module.exports = {
         singleQuote: false,
         printWidth: 120,
         jsxSingleQuote: false,
-        endOfLine: "auto"
       }
     ]
   }

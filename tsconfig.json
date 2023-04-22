@@ -24,7 +24,8 @@
       "@/types/*": ["./src/common/types/*"],
       "@/styles/*": ["src/common/styles/*"],
       "@/services/*": ["./src/services/*"],
-      "@/hooks/*": ["./src/shared/hooks/*"]
+      "@/hooks/*": ["./src/shared/hooks/*"],
+      "@/store/*": ["./src/store/*"],
     }
   },
   "include": ["src"],

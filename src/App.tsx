@@ -6,7 +6,10 @@ import { PUBLIC_ROUTES } from "./routes";
 const App: React.FC = () => {
   return (
     <Routes>
-      {PUBLIC_ROUTES.map(({ path, component: Component = Fragment, layout: Layout, children = [] }, index) => {
+      {PUBLIC_ROUTES.map(({ path, component, layout, children = [] }, index) => {
+        const Component = component || Fragment;
+        const Layout = layout || Fragment;
+
         return (
           <Route
             key={index}
@@ -17,7 +20,7 @@ const App: React.FC = () => {
               </Layout>
             }
           >
-            {children.map(({ path, component: Component }, index) => (
+            {children.map(({ path, component: Component = Fragment }, index) => (
               <Route key={index} path={path} element={<Component />} />
             ))}
           </Route>

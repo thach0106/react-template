@@ -14,7 +14,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@loadable/component": "^5.15.3",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.1",
     "@popperjs/core": "^2.11.7",
     "@reduxjs/toolkit": "^1.9.5",
     "@types/styled-components": "^5.1.26",
@@ -27,8 +31,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.10.0",
-    "sort-by": "^1.2.0",
-    "styled-components": "^5.3.9"
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/loadable__component": "^5.13.4",

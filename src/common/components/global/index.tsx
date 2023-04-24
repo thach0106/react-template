@@ -1,17 +1,20 @@
 import React, { ReactNode, Fragment } from "react";
-import { GlobalContainer, GlobalStyle } from "./global.styles";
+import { globalStyles } from "./global.styles";
+import { Global } from "@emotion/react";
 
 import "normalize.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import "@/styles/scss/_all.scss";
 
 interface PropsType {
   children: ReactNode;
 }
+
 const GlobalStyles: React.FC<PropsType> = ({ children }) => {
   return (
     <Fragment>
-      <GlobalContainer>{children}</GlobalContainer>
-      <GlobalStyle />
+      {children}
+      <Global styles={globalStyles} />
     </Fragment>
   );
 };

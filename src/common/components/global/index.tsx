@@ -4,7 +4,7 @@ import { Global } from "@emotion/react";
 
 import "normalize.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "@/styles/scss/_all.scss";
+import "@/common/styles/scss/_common.scss";
 
 interface PropsType {
   children: ReactNode;

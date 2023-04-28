@@ -22,7 +22,7 @@
       "@/modules/*": ["./src/modules/*"],
       "@/components/*": ["./src/common/components/*"],
       "@/types/*": ["./src/common/types/*"],
-      "@/styles/*": ["src/common/styles/*"],
+      "@/styles/*": ["./src/common/styles/*"],
       "@/services/*": ["./src/services/*"],
       "@/hooks/*": ["./src/shared/hooks/*"],
       "@/store/*": ["./src/store/*"],

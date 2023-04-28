@@ -10,7 +10,8 @@ const initialState: AppState = {
   loading: {
     count: 0,
     isLoading: false
-  }
+  },
+  mode: "light"
 };
 
 export const appSlice = createSlice({

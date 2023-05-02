@@ -23,6 +23,9 @@ export const appSlice = createSlice({
         count: state.loading.count++,
         isLoading: true
       };
+    },
+    toggleDarkMode(state) {
+      state.mode = state.mode === "light" ? "dark" : "light";
     }
   },
   extraReducers: (builder) => {
@@ -34,6 +37,6 @@ export const appSlice = createSlice({
   }
 });
 
-export const { setLoading } = appSlice.actions;
+export const { setLoading, toggleDarkMode } = appSlice.actions;
 
 export default appSlice.reducer;
